@@ -5,10 +5,10 @@ import pandas as pd
 pg.PAUSE = 0.5 # pause de 0.8 segundos entre cada ação por padrão
 
 # entrando no google
-pg.click(x=52, y=886)
+pg.click(x=52, y=886) # clicando no ícone da lupa no meu windows (pode ser diferente a posição de acordo com cada monitor)
 pg.write("chrome")
 pg.press("enter")
-pg.click(x=611, y=519)
+pg.click(x=611, y=519) #clicando para entrar no perfil do google que eu escolhi
 
 time.sleep(1.5) # pause de 1 segundo
 
@@ -19,7 +19,7 @@ pg.press("enter")
 time.sleep(1.5) # pause de 1 segundo 
 
 # fazendo o login no sistema
-pg.click(x=574, y=376)
+pg.click(x=574, y=376) #clicando no input de email
 pg.write("testando@gmail.com")
 pg.press("tab")
 pg.write("senha123")
